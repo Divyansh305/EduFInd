@@ -15,41 +15,48 @@ EduFind is a Personal Learning Assistant (PLA) web application built with Django
 To run EduFind locally, follow these steps:
 
 1. Clone the repository:
+   ```bash
    git clone https://github.com/your-username/EduFind.git
-2.Install dependencies:
+   ```
 
-  pip install -r requirements.txt
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3.Set up the database:
+3. Set up the database:
+   ```bash
+   python manage.py migrate
+   ```
 
-python manage.py migrate
+4. Create a superuser:
+   ```bash
+   python manage.py createsuperuser
+   ```
 
-4.Create a superuser:
+5. Run the development server:
+   ```bash
+   python manage.py runserver
+   ```
 
+6. Access the application at [http://localhost:8000/](http://localhost:8000/)
 
-python manage.py createsuperuser
+## Usage
 
-Run the development server:
+1. Register an account or log in if you already have one.
+2. Explore educational resources using the search feature.
+3. Track your learning progress and collaborate with others.
+4. Enjoy learning with EduFind!
 
-
-    python manage.py runserver
-
-    Access the application at http://localhost:8000/
-
-Usage
-
-    Register an account or log in if you already have one.
-    Explore educational resources using the search feature.
-    Track your learning progress and collaborate with others.
-    Enjoy learning with EduFind!
-
-Contributing
+## Contributing
 
 Contributions are welcome! If you'd like to contribute to EduFind, please follow these steps:
 
-    Fork the repository.
-    Create a new branch (git checkout -b feature-name).
-    Make your changes.
-    Commit your changes (git commit -am 'Add new feature').
-    Push to the branch (git push origin feature-name).
-    Create a new pull request.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-name`).
+6. Create a new pull request.
+
+
