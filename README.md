@@ -19,27 +19,39 @@ To run EduFind locally, follow these steps:
    git clone https://github.com/your-username/EduFind.git
    ```
 
-2. Install dependencies:
+2. Navigate to the project directory:
+   ```bash
+   cd EduFind
+   ```
+
+3. Create and activate a virtual environment (optional but recommended):
+   ```bash
+   python -m venv env
+   source env/bin/activate  # For Linux/macOS
+   .\env\Scripts\activate    # For Windows
+   ```
+
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Set up the database:
+5. Set up the database:
    ```bash
    python manage.py migrate
    ```
 
-4. Create a superuser:
+6. Create a superuser:
    ```bash
    python manage.py createsuperuser
    ```
 
-5. Run the development server:
+7. Run the development server:
    ```bash
    python manage.py runserver
    ```
 
-6. Access the application at [http://localhost:8000/](http://localhost:8000/)
+8. Access the application at [http://localhost:8000/](http://localhost:8000/)
 
 ## Usage
 
